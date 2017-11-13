@@ -1,0 +1,12 @@
+#server:
+#  port: 80000
+
+eureka:
+  instance:
+    hostname: cks
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://cks:8761/eureka/
+
