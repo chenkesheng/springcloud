@@ -1,0 +1,19 @@
+server:
+  port: 8081
+spring:
+#  datasource:
+#    name: cks_master
+#    url: jdbc:musql://127.0.0.1:3306/cks_master
+#    username: root
+#    password: root
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    driver-class-name: com.mysql.jdbc.Driver
+
+  application:
+    name: common
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://cks:8761/eureka/
