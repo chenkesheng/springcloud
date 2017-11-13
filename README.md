@@ -15,3 +15,4 @@
 #后期会扩展Ribbon负载均衡 GateWay Hystrix熔断器、网关我应该会用nginx zuul个人觉得很鸡肋。
 
 *要启动我这项目记得在windows hosts 文件最下方加一个主机端口     **127.0.0.1 cks cks1**
+*Mac下的话 修改 etc/hosts 文件  添加这句  **127.0.0.1 cks cks1**
