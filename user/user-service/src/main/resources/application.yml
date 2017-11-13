@@ -3,7 +3,7 @@ server:
 spring:
 #  datasource:
 #    name: cks_master
-#    url: jdbc:musql://127.0.0.1:3306/cks_master
+#    url: jdbc:mysql://127.0.0.1:3306/cks_master
 #    username: root
 #    password: root
 #    type: com.alibaba.druid.pool.DruidDataSource
@@ -15,4 +15,6 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://cks:8761/eureka/
+      defaultZone: http://cks:8761/eureka/,http://cks1:8762/eureka/
+  instance:
+    preferIpAddress: true

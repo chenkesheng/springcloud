@@ -6,6 +6,7 @@ import com.springcloud.core.entity.CodeMessage;
 import com.springcloud.user.client.Client;
 import com.springcloud.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -55,6 +56,7 @@ public class UserServiceController {
 //    public Page<CodeMessage> find(Page<CodeMessage>page){
 //        return codeMessageService.findPage(page);
 //    }
+    @LoadBalanced
     @RequestMapping(value = "find-code-message", method = RequestMethod.GET)
     public CodeMessage findByKey(@RequestParam("key") Integer key){
         return codeMessageService.findByKey(key);
