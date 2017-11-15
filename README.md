@@ -15,4 +15,6 @@
 #后期会扩展Ribbon负载均衡 GateWay Hystrix熔断器、网关我应该会用nginx zuul个人觉得很鸡肋。
 
 *要启动我这项目记得在windows hosts 文件最下方加一个主机端口     **127.0.0.1 cks cks1**
-*Mac和linux下的话 修改 etc/hosts 文件  添加这句  **127.0.0.1 cks cks1**
+*Mac和linux下的话 修改 etc/hosts 文件  添加这句  **127.0.0.1 cks cks1** 然后执行source /etc/hosts
+
+- 千万别使用JDK9 本人被JDK9坑了  无法识别我们的配置文件。 导致Eureka无法正常启动。现在官方暂时没解决这个问题。建议等SpringBoot2.0出来之后在看
