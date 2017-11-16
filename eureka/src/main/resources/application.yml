@@ -4,6 +4,8 @@ logging:
 ---
 spring:
   profiles: cks
+  application:
+    name: eureka
 server:
   port: 8761
 
@@ -11,14 +13,17 @@ eureka:
   instance:
     hostname: cks
   client:
+#单节点要加这个，不让注册中心自己注册自己
 #    registerWithEureka: true
-#    fetchRegistry: true
+    fetchRegistry: false #这个参数上注册缓存
     serviceUrl:
       defaultZone: http://cks1:8762/eureka/
 
 ---
 spring:
   profiles: cks1
+  application:
+    name: eureka
 server:
   port: 8762
 eureka:

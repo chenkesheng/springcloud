@@ -1,7 +1,6 @@
 package com.springcloud.user.controller;
 
 
-import com.springcloud.common.api.ICodeMessageService;
 import com.springcloud.core.entity.CodeMessage;
 import com.springcloud.user.client.Client;
 import com.springcloud.user.service.UserService;
