@@ -1,15 +1,15 @@
-package com.springcloud.common;
-
+package com.cks.hystrix;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 
 /**
  * @Author: cks
- * @Date: Created by 15:03 2017/11/12
- * @Package: com.springcloud.common
+ * @Date: Created by 下午5:35 2017/11/19
+ * @Package: com.cks.hystrix
  * @Description:
  */
 @SpringBootApplication
@@ -17,8 +17,10 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @EnableEurekaClient
 //开启熔断器
 @EnableCircuitBreaker
-public class CommonApplication {
+//启用Hystrix Dashboard功能
+@EnableHystrixDashboard
+public class HystrixDashboardApplication {
     public static void main(String[] args) {
-        SpringApplication.run(CommonApplication.class, args);
+        SpringApplication.run(HystrixDashboardApplication.class, args);
     }
 }

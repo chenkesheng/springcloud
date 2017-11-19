@@ -2,7 +2,7 @@
 #  level: debug
 security:
   basic:
-    enabled: true  #开启基于HTTP basic的认证
+    enabled: false  #开启基于HTTP basic的认证
   user:
     name: admin    #配置登陆名
     password: 123456   #配置登陆密码
@@ -19,10 +19,10 @@ eureka:
     hostname: cks
   client:
 #单节点要加这个，不让注册中心自己注册自己
-#    registerWithEureka: true
+    registerWithEureka: false
     fetchRegistry: false #这个参数上注册缓存
     serviceUrl:
-      defaultZone: http://admin:123456@cks1:8762/eureka/
+      defaultZone: http://cks1:8762/eureka/
 
 ---
 spring:
@@ -35,5 +35,8 @@ eureka:
   instance:
     hostname: cks1
   client:
+#单节点要加这个，不让注册中心自己注册自己
+    registerWithEureka: false
+    fetchRegistry: false #这个参数上注册缓存
     serviceUrl:
-      defaultZone: http://admin:123456@cks:8761/eureka/
+      defaultZone: http://cks:8761/eureka/

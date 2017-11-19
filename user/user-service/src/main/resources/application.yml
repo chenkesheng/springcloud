@@ -1,5 +1,11 @@
 server:
   port: 8088
+security:
+  basic:
+    enabled: false  #开启基于HTTP basic的认证
+  user:
+    name: admin    #配置登陆名
+    password: 123456   #配置登陆密码
 spring:
 #  datasource:
 #    name: cks_master
@@ -16,6 +22,6 @@ eureka:
   client:
     serviceUrl:
     #这其实是存在map中，key是defaultZone,value是注册地址
-      defaultZone: http://admin:123456@cks:8761/eureka/,http://admin:123456@cks1:8762/eureka/
+      defaultZone: http://cks:8761/eureka/,http://cks1:8762/eureka/
   instance:
     preferIpAddress: true

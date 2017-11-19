@@ -1,15 +1,13 @@
 package com.springcloud.user.controller;
 
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.springcloud.core.entity.CodeMessage;
 import com.springcloud.user.client.Client;
 import com.springcloud.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 
 /**
@@ -56,8 +54,10 @@ public class UserServiceController {
 //        return codeMessageService.findPage(page);
 //    }
     @LoadBalanced
+    @HystrixCommand(fallbackMethod = "helloFallback")
     @RequestMapping(value = "find-code-message", method = RequestMethod.GET)
     public CodeMessage findByKey(@RequestParam("key") Integer key){
+//        return new CodeMessage(key,discovery)
         return codeMessageService.findByKey(key);
     }
 }

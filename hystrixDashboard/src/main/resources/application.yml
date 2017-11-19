@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8082
 security:
   basic:
     enabled: false  #开启基于HTTP basic的认证
@@ -16,12 +16,12 @@ spring:
 #    driver-class-name: com.mysql.jdbc.Driver
 
   application:
-    name: common
+    name: hystrix
 
 
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://cks:8761/eureka/,http://cks1:8762/eureka/
-  instance:
-    preferIpAddress: true
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://cks:8761/eureka/,http://cks1:8762/eureka/
+#  instance:
+#    preferIpAddress: true
