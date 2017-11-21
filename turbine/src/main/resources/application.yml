@@ -1,0 +1,21 @@
+security:
+  basic:
+    enabled: false  #开启基于HTTP basic的认证
+  user:
+    name: admin    #配置登陆名
+    password: 123456   #配置登陆密码
+spring:
+  application:
+    name: turbine
+management:
+  port: 8089
+server:
+  port: 8989
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://cks:8761/eureka/,http://cks1:8762/eureka/
+turbine:
+  app-config: COMMON
+  cluster-name-expression: "'default'"
+  combine-host-port: true
