@@ -7,6 +7,11 @@ security:
     name: admin    #配置登陆名
     password: 123456   #配置登陆密码
 spring:
+  cloud:
+      loadbalancer:
+        retry:
+          #启动重试
+          enabled: true
 #  datasource:
 #    name: cks_master
 #    url: jdbc:mysql://127.0.0.1:3306/cks_master

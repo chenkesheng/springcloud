@@ -1,5 +1,5 @@
 server:
-  port: 8088
+  port: 8083
 security:
   basic:
     enabled: false  #开启基于HTTP basic的认证
@@ -16,13 +16,12 @@ spring:
 #    driver-class-name: com.mysql.jdbc.Driver
 
   application:
-    name: user
+    name: common
 
 
 eureka:
   client:
     serviceUrl:
-      #这其实是存在map中，key是defaultZone,value是注册地址
       defaultZone: http://cks:8761/eureka/,http://cks1:8762/eureka/
   instance:
     preferIpAddress: true
