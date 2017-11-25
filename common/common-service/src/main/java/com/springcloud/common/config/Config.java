@@ -1,0 +1,25 @@
+package com.springcloud.common.config;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+/**
+ * @Author: cks
+ * @Date: Created by 上午10:40 2017/11/25
+ * @Package: com.springcloud.common.config
+ * @Description:
+ */
+@ConfigurationProperties
+@RestController
+@RefreshScope
+public class Config {
+    private String foo;
+
+    @RequestMapping(value = "/hi")
+    public String hi(){
+        return foo;
+    }
+}
+

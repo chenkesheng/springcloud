@@ -1,0 +1,25 @@
+server:
+  port: 7002
+security:
+  basic:
+    enabled: false  #开启基于HTTP basic的认证
+  user:
+    name: admin    #配置登陆名
+    password: ${cipher}123456   #配置登陆密码
+spring:
+  application:
+    name: common
+  cloud:
+    config:
+      uri: http://localhost:7001/
+      label: master
+      profile: dev
+
+
+#eureka:
+#  client:
+#    serviceUrl:
+#      #这其实是存在map中，key是defaultZone,value是注册地址
+#      defaultZone: http://cks:8761/eureka/,http://cks1:8762/eureka/
+#  instance:
+#    preferIpAddress: true
