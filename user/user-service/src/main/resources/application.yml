@@ -1,28 +1,29 @@
-server:
-  port: 8088
-security:
-  basic:
-    enabled: false  #开启基于HTTP basic的认证
-  user:
-    name: admin    #配置登陆名
-    password: 123456   #配置登陆密码
-spring:
-#  datasource:
-#    name: cks_master
-#    url: jdbc:mysql://127.0.0.1:3306/cks_master
-#    username: root
-#    password: root
-#    type: com.alibaba.druid.pool.DruidDataSource
-#    driver-class-name: com.mysql.jdbc.Driver
-
-  application:
-    name: user
-
-
-eureka:
-  client:
-    serviceUrl:
-      #这其实是存在map中，key是defaultZone,value是注册地址
-      defaultZone: http://cks:8761/eureka/,http://cks1:8762/eureka/
-  instance:
-    preferIpAddress: true
+from: cks
+#server:
+#  port: 8088
+#security:
+#  basic:
+#    enabled: false  #开启基于HTTP basic的认证
+#  user:
+#    name: admin    #配置登陆名
+#    password: 123456   #配置登陆密码
+#spring:
+##  datasource:
+##    name: cks_master
+##    url: jdbc:mysql://127.0.0.1:3306/cks_master
+##    username: root
+##    password: root
+##    type: com.alibaba.druid.pool.DruidDataSource
+##    driver-class-name: com.mysql.jdbc.Driver
+#
+#  application:
+#    name: user
+#
+#
+#eureka:
+#  client:
+#    serviceUrl:
+#      #这其实是存在map中，key是defaultZone,value是注册地址
+#      defaultZone: http://cks:8761/eureka/,http://cks1:8762/eureka/
+#  instance:
+#    preferIpAddress: true
