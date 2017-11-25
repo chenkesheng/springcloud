@@ -1,3 +1,4 @@
+foo: common-dev
 server:
   port: 8083
 security:
