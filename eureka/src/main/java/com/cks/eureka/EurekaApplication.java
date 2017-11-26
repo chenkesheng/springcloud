@@ -3,7 +3,6 @@ package com.cks.eureka;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
-import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
 
 /**
  * @Author: cks
@@ -13,7 +12,7 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
  */
 @SpringBootApplication
 @EnableEurekaServer
-@EnableAuthorizationServer
+//@EnableAuthorizationServer
 public class EurekaApplication {
     public static void main(String[] args) {
         SpringApplication.run(EurekaApplication.class, args);
