@@ -1,4 +1,4 @@
-foo: user-dev :::
+foo: user-dev
 server:
   port: 8088
 security:
