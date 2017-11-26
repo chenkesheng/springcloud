@@ -60,4 +60,12 @@ public class UserServiceController {
 //        return new CodeMessage(key,discovery)
         return codeMessageService.findByKey(key);
     }
+
+    public CodeMessage helloFallback(@RequestParam("key") Integer key) {
+        CodeMessage codeMessage = new CodeMessage();
+        codeMessage.setId(key);
+        codeMessage.setMsg("监控图");
+        codeMessage.setMemo("监控图");
+        return codeMessage;
+    }
 }

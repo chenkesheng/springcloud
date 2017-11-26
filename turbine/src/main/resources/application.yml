@@ -16,6 +16,6 @@ eureka:
     serviceUrl:
       defaultZone: http://cks:8761/eureka/,http://cks1:8762/eureka/
 turbine:
-  app-config: COMMON
+  app-config: user
   cluster-name-expression: "'default'"
   combine-host-port: true
