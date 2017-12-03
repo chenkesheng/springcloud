@@ -9,10 +9,10 @@ spring:
       profile: dev
 
 
-eureka:
-  client:
-    serviceUrl:
-      #这其实是存在map中，key是defaultZone,value是注册地址
-      defaultZone: http://cks:8761/eureka/,http://cks1:8762/eureka/
-  instance:
-    preferIpAddress: true
+#eureka:
+#  client:
+#    serviceUrl:
+#      #这其实是存在map中，key是defaultZone,value是注册地址
+#      defaultZone: http://cks:8761/eureka/,http://cks1:8762/eureka/
+#  instance:
+#    preferIpAddress: true

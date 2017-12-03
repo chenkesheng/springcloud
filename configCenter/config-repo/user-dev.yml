@@ -13,13 +13,6 @@ spring:
         retry:
           #启动重试
           enabled: true
-#  datasource:
-#    name: cks_master
-#    url: jdbc:mysql://127.0.0.1:3306/cks_master
-#    username: root
-#    password: root
-#    type: com.alibaba.druid.pool.DruidDataSource
-#    driver-class-name: com.mysql.jdbc.Driver
 
   application:
     name: user

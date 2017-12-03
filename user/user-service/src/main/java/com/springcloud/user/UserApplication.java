@@ -4,6 +4,7 @@ package com.springcloud.user;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
@@ -25,6 +26,8 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 //熔断器
 @EnableCircuitBreaker
 @EnableHystrixDashboard
+//实时刷新
+@RefreshScope
 //@SpringCloudApplication 一个顶好几个
 public class UserApplication {
     public static void main(String[] args) {
