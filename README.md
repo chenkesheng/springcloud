@@ -10,7 +10,11 @@
 * core:核心模块  
 * doc:相关笔记、文档
 * eureka:eureka注册中心
-* user：用户模块 
+* user:用户模块 
+* config:模块是统一配置中心 common/user模块要启动必须先启动这一模块拉取配置
+* hystrixDashboard:仪表盘模块
+* turbine:监控请求模块
+* configClient:统一配置中心客户端、common/user模块都有这个功能
 
 #后期会扩展网关zipkin分布式链路追踪:网关我应该会用nginx zuul个人觉得很鸡肋。
 
