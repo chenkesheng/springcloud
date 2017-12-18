@@ -16,13 +16,14 @@ server:
 
 eureka:
   instance:
-    hostname: cks
+    prefer-ip-address: true
+#    hostname: cks
   client:
 #单节点要加这个，不让注册中心自己注册自己
     registerWithEureka: false
     fetchRegistry: false #这个参数上注册缓存
     serviceUrl:
-      defaultZone: http://cks1:8762/eureka/
+      defaultZone: http://127.0.0.1:8762/eureka/
 
 ---
 spring:
@@ -33,10 +34,11 @@ server:
   port: 8762
 eureka:
   instance:
-    hostname: cks1
+#    hostname: cks1
+    prefer-ip-address: true
   client:
 #单节点要加这个，不让注册中心自己注册自己
     registerWithEureka: false
     fetchRegistry: false #这个参数上注册缓存
     serviceUrl:
-      defaultZone: http://cks:8761/eureka/
+      defaultZone: http://127.0.0.1:8761/eureka/
