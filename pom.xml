@@ -12,7 +12,6 @@
         <module>user</module>
         <module>common</module>
         <module>core</module>
-        <module>support</module>
         <module>eureka</module>
         <module>eureka02</module>
         <module>hystrixDashboard</module>
