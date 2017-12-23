@@ -23,7 +23,8 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false #这个参数上注册缓存
     serviceUrl:
-      defaultZone: http://127.0.0.1:8761/eureka/
+#      defaultZone: http://127.0.0.1:8761/eureka/
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
 #---
 #spring:
