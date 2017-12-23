@@ -1,5 +1,7 @@
 #logging:
 #  level: debug
+server:
+  port: 8762
 security:
   basic:
     enabled: false  #开启基于HTTP basic的认证
@@ -30,8 +32,6 @@ spring:
   profiles: cks1
   application:
     name: eureka02
-server:
-  port: 8762
 eureka:
   instance:
     hostname: 127.0.0.1
