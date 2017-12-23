@@ -11,4 +11,5 @@
 
     <artifactId>user-api</artifactId>
     <name>springcloud :: user :: api</name>
+
 </project>
