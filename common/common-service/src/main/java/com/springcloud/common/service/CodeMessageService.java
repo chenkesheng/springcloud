@@ -19,7 +19,7 @@ public class CodeMessageService implements ICodeMessageService {
     /**
      * 新增错误码
      *
-     * @param codeMessage
+     * @param
      */
 //    public void insertCodeMessage(CodeMessage codeMessage) {
 //        codeMessage.setStatus(CodeMessage.STATUS_OPEN);
