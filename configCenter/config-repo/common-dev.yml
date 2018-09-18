@@ -1,4 +1,4 @@
-foo: common-dev
+env: common-dev
 server:
   port: 8083
 security:

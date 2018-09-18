@@ -10,21 +10,21 @@ security:
     password: ${cipher}123456   #配置登陆密码
 ---
 spring:
-  profiles: cks
+#  profiles: cks
   application:
     name: eureka
 
 eureka:
   instance:
-#    prefer-ip-address: true
-    hostname: 127.0.0.1 #加这个就必须改hosts文件的主机名
+    prefer-ip-address: true
+#    hostname: 127.0.0.1 #加这个就必须改hosts文件的主机名
   client:
 #单节点要加这个，不让注册中心自己注册自己
     registerWithEureka: false
     fetchRegistry: false #这个参数上注册缓存
     serviceUrl:
-#      defaultZone: http://127.0.0.1:8761/eureka/
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://127.0.0.1:8761/eureka/
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
 #---
 #spring:

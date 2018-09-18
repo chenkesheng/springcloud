@@ -1,6 +1,6 @@
 from: cks
-#server:
-#  port: 8088
+server:
+  port: 8088
 #security:
 #  basic:
 #    enabled: false  #开启基于HTTP basic的认证
@@ -15,15 +15,15 @@ from: cks
 ##    password: root
 ##    type: com.alibaba.druid.pool.DruidDataSource
 ##    driver-class-name: com.mysql.jdbc.Driver
-#
+
 #  application:
 #    name: user
-#
-#
-#eureka:
-#  client:
-#    serviceUrl:
-#      #这其实是存在map中，key是defaultZone,value是注册地址
-#      defaultZone: http://cks:8761/eureka/,http://cks1:8762/eureka/
-#  instance:
-#    preferIpAddress: true
+
+
+eureka:
+  client:
+    serviceUrl:
+      #这其实是存在map中，key是defaultZone,value是注册地址
+      defaultZone: http://127.0.0.1:8761/eureka/,http://cks1:8762/eureka/
+  instance:
+    preferIpAddress: true
