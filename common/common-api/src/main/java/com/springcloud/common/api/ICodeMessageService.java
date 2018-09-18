@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author cks
  * @Date 2017/7/21.
  */
-@RequestMapping("/")
+@RequestMapping("/code/message")
 public interface ICodeMessageService {
     /**
      * 将错误编号对应的消息使用params进行格式化。

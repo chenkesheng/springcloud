@@ -32,6 +32,12 @@
             <artifactId>archaius-core</artifactId>
             <version>0.7.6</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.netflix.servo/servo-core -->
+        <dependency>
+            <groupId>com.netflix.servo</groupId>
+            <artifactId>servo-core</artifactId>
+            <version>0.12.25</version>
+        </dependency>
 
     </dependencies>
 
