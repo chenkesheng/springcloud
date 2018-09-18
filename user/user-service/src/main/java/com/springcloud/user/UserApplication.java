@@ -17,7 +17,9 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
  */
 //启用单点登陆
 //@EnableOAuth2Sso
-//注册中心
+//向eureka注册自己作为一个服务的调用client
+// @EnableDiscoveryClient
+//注册中心 代表的是向eureka注册自己，将自己作为一个服务
 @EnableEurekaClient
 //声明调用
 @EnableFeignClients
