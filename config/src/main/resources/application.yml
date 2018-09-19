@@ -15,9 +15,9 @@ spring:
         git:
           uri: "https://github.com/chenkesheng/springcloud.git"
           #仓库的搜索路径
-          searchPaths: "configCenter/config-repo"
-          username:
-          password:
+          searchPaths: "config-center/config-repo"
+          username: chenkesheng
+          password: CHRISpaul33
       label: master
 
 

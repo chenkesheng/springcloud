@@ -1,6 +1,6 @@
 #from: cks
-server:
-  port: 8083
+#server:
+#  port: 8083
 #security:
 #  basic:
 #    enabled: false  #开启基于HTTP basic的认证
@@ -20,9 +20,9 @@ server:
 #    name: common
 
 
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://127.0.0.1:8761/eureka/,http://cks1:8762/eureka/
-  instance:
-    preferIpAddress: true
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://127.0.0.1:8761/eureka/,http://cks1:8762/eureka/
+#  instance:
+#    preferIpAddress: true
