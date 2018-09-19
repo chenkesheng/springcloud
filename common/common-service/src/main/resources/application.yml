@@ -1,3 +1,5 @@
+
+spring.zipkin.base-url: http://localhost:8763
 #from: cks
 #server:
 #  port: 8083

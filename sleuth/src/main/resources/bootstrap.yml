@@ -1,0 +1,9 @@
+
+spring:
+  application:
+    name: sleuth
+  cloud:
+    config:
+      uri: http://localhost:7001/
+      label: master
+      profile: dev

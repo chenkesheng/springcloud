@@ -1,11 +1,11 @@
 server:
   port: 7001
-security:
-  basic:
-    enabled: false  #开启基于HTTP basic的认证
-  user:
-    name: admin    #配置登陆名
-    password: ${cipher}123456   #配置登陆密码
+#security:
+#  basic:
+#    enabled: false  #开启基于HTTP basic的认证
+#  user:
+#    name: admin    #配置登陆名
+#    password: ${cipher}123456   #配置登陆密码
 spring:
   application:
     name: config-server
@@ -13,9 +13,9 @@ spring:
     config:
       server:
         git:
-          uri: "https://github.com/chenkesheng/springcloud.git"
+          uri: https://github.com/chenkesheng/springcloud
           #仓库的搜索路径
-          searchPaths: "config-center/config-repo"
+          searchPaths: config/config-center/config-repo
           username: chenkesheng
           password: CHRISpaul33
       label: master
@@ -25,6 +25,6 @@ eureka:
   client:
     serviceUrl:
       #这其实是存在map中，key是defaultZone,value是注册地址
-      defaultZone: http://127.0.0.1:8761/eureka/,http://cks.molbase.org:8762/eureka/
+      defaultZone: http://cks:8761/eureka/,http://cks1:8762/eureka/
   instance:
     preferIpAddress: true
