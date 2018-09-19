@@ -18,6 +18,7 @@
         <module>hystrix-turbine</module>
         <module>configClient</module>
         <module>zuul</module>
+        <module>config</module>
     </modules>
     <name>springcloud :: parent</name>
 

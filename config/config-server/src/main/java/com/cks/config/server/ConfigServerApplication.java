@@ -3,19 +3,17 @@ package com.cks.config.server;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.config.server.EnableConfigServer;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @Author: cks
- * @Date: Created by 下午4:25 2017/11/23
+ * @Date: Created by 10:20 2018/9/19
  * @Package: com.cks.config.server
- * @Description:
+ * @Description:统一配置中心服务
  */
-@EnableConfigServer
 @SpringBootApplication
-@RestController
-public class StartConfigServer {
+@EnableConfigServer
+public class ConfigServerApplication {
     public static void main(String[] args) {
-        SpringApplication.run(StartConfigServer.class, args);
+        SpringApplication.run(ConfigServerApplication.class, args);
     }
 }
